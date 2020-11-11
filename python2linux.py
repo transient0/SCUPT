@@ -4,7 +4,6 @@ from matplotlib.font_manager import FontProperties
 font_zh = FontProperties(
     fname="/home/ou/anaconda3/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/simhei.ttf")  # 导入中文字体
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 
 data = np.array([
     [0.50, 0.513, 0.05, 0.023],
