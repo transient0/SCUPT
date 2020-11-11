@@ -1,4 +1,3 @@
-import os
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.font_manager import FontProperties
@@ -50,4 +49,4 @@ plt.ylabel("$U_F(V)$")  # Y轴标签
 plt.legend(prop=font_zh)  # 添加图例，并设置中文字体
 plt.title("$U_F$与$T$关系实验结果及线性拟合", fontproperties=font_zh)  # 添加标题，并设置中文字体
 plt.show()  # 输出绘图
-plt.savefig(__file__+'.svg')
+plt.savefig(__file__+'.svg')  # 保存图片
