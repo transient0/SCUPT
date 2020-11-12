@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.font_manager import FontProperties
 font_zh = FontProperties(
-    fname="/home/ou/anaconda3/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/simhei.ttf")  # 导入中文字体
+    fname="/home/zgb/ojy/simhei.ttf")  # 导入中文字体
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 data = np.array([
@@ -37,5 +37,4 @@ plt.xlabel("X")
 plt.ylabel("Y")
 plt.legend(prop=font_zh)
 plt.title("Y与X关系实验结果及理论曲线", fontproperties=font_zh)
-plt.show()
 plt.savefig(__file__+'.svg')  # 保存图片
