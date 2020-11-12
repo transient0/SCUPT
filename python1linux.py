@@ -47,5 +47,7 @@ plt.axis([30, 70, 0.52, 0.64])
 plt.xlabel("$T(^\circ C)$")  # X轴标签
 plt.ylabel("$U_F(V)$")  # Y轴标签
 plt.legend(prop=font_zh)  # 添加图例，并设置中文字体
-plt.title("$U_F$与$T$关系实验结果及线性拟合", fontproperties=font_zh)  # 添加标题，并设置中文字体
+plt.title("$U_F$与$T$关系实验结果及线性拟合",
+          fontproperties=font_zh,
+          fontsize=16)  # 添加标题，并设置中文字体
 plt.savefig(__file__+'.svg')  # 保存图片

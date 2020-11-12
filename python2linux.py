@@ -36,5 +36,7 @@ plt.axis([0, 3, 0, 0.6])
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.legend(prop=font_zh)
-plt.title("Y与X关系实验结果及理论曲线", fontproperties=font_zh)
+plt.title("Y与X关系实验结果及理论曲线",
+          fontproperties=font_zh,
+          fontsize=16)
 plt.savefig(__file__+'.svg')  # 保存图片
