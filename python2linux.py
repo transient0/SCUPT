@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.font_manager import FontProperties
+font_zh = FontProperties(
+    fname="/home/zgb/ojy/simhei.ttf")  # 导入中文字体
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 
 data = np.array([
     [0.50, 0.513, 0.05, 0.023],
@@ -33,6 +35,6 @@ plt.errorbar(x, y, yEr, xEr, '.',
 plt.axis([0, 3, 0, 0.6])
 plt.xlabel("X")
 plt.ylabel("Y")
-plt.legend()
-plt.title("Y与X关系实验结果及理论曲线")
-plt.show()
+plt.legend(prop=font_zh)
+plt.title("Y与X关系实验结果及理论曲线", fontproperties=font_zh)
+plt.savefig(__file__+'.svg')  # 保存图片
