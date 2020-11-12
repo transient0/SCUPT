@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.font_manager import FontProperties
 font_zh = FontProperties(
-    fname="/home/ou/anaconda3/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/simhei.ttf")
+    fname="/mnt/c/Windows/Fonts/simhei.ttf")
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 data = np.array([
