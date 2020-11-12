@@ -2,11 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.font_manager import FontProperties
 font_zh = FontProperties(
-<<<<<<< HEAD
-    fname="/mnt/c/Windows/Fonts/simhei.ttf")
-=======
     fname="/home/zgb/ojy/simhei.ttf")  # 导入中文字体
->>>>>>> d9ac10654eb24422ee0297c1164300211e01bb68
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 data = np.array([
