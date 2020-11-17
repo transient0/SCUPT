@@ -23,7 +23,7 @@ a1 = popt[0]
 a2 = popt[1]
 a3 = popt[2]
 a4 = popt[3]
-print("a1=%f  a2=%f  a3=%f  a4=%f", a1, a2, a3, a4)
+print(a1, a2, a3, a4)
 y = func(x, a1, a2, a3, a4)
 # 进行拟合，获得四个系数，并构建函数
 

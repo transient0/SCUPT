@@ -13,5 +13,3 @@ scatter(x0, y0, 16, 'o', 'filled', 'MarkerFaceColor', 'r')
 plot(x, y, '-', ...% 实线型
 'Color', 'b', ...% 颜色
 'LineWidth', 1)% 线宽
-
-legend('实验结果', '拟合曲线', 'FontName', 'SimHei')
