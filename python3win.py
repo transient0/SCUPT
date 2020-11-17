@@ -4,16 +4,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import os
-font_zh = FontProperties(
-    fname="/home/zgb/ojy/simhei.ttf")  # 导入中文字体
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 
 
 def func(x, a1, a2, a3, a4):
     return a1*np.sin(a2*(x+a3))+a4  # 自定义要拟合的函数
 
 
-data = np.array(pd.read_csv("/home/zgb/ojy/SCUPT/data.csv"))  # 从csv文件获取数据
+data = np.array(pd.read_csv("D:\WORK\GitHub\SCUPT\data.csv"))  # 从csv文件获取数据
 x0 = np.array(data[:, 0])
 y0 = np.array(data[:, 1])
 x = np.linspace(0, 3, 300)
@@ -35,6 +34,6 @@ plt.plot(x, y, 'b',
          linewidth=1,
          label="拟合曲线")
 
-plt.legend(prop=font_zh)
-plt.title("摩擦振子实验结果及正弦拟合", fontproperties=font_zh, fontsize=16)
-plt.savefig(__file__+'.svg')
+plt.legend()
+plt.title("摩擦振子实验结果及正弦拟合", fontsize=16)
+plt.show()
