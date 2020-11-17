@@ -1,4 +1,4 @@
-data = readmatrix('data.csv');
+data = csvread('data.csv', 1, 0);
 
 x0 = data(:, 1);
 y0 = data(:, 2);
