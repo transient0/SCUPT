@@ -9,7 +9,7 @@ func = @(a, x)a(1) * sin(a(2) * (x + a(3))) + a(4);
 p = lsqcurvefit(func, [-30, 5, 0, 0], x0, y0)
 y = func(p, x);
 
-scatter(x0, y0, 16, 'o', 'filled', 'MarkerFaceColor', 'r')
+scatter(x0, y0, 16, 'o', 'filled', 'MarkerFaceColor', 'r')%绘制散点图
 plot(x, y, '-', ...% 实线型
 'Color', 'b', ...% 颜色
 'LineWidth', 1)% 线宽
