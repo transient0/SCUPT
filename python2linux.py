@@ -33,8 +33,8 @@ plt.errorbar(x, y, yEr, xEr, '.',
 # 误差图（X，Y，Y±，X±，各种选项=对应值）
 
 plt.axis([0, 3, 0, 0.6])
-plt.xlabel("X")
-plt.ylabel("Y")
+plt.xlabel("X(mm)")
+plt.ylabel("Y(mm)")
 plt.legend(prop=font_zh)
 plt.title("Y与X关系实验结果及理论曲线",
           fontproperties=font_zh,

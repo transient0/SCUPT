@@ -26,7 +26,7 @@ errorbar(x, y, yEr, yEr, xEr, xEr, '.', ...
 % 误差图（X，Y，Y-，Y+，X-，X+，各种选项，对应值）
 
 axis([0 3 0 0.6])
-xlabel('X')
-ylabel('Y')
+xlabel('X(mm)')
+ylabel('Y(mm)')
 legend('理论曲线', '实验结果')
 title('Y与X关系实验结果及理论曲线')
