@@ -35,6 +35,8 @@ plt.plot(x, y, 'b',
          linewidth=1,
          label="拟合曲线")
 
+plt.xlabel("T(S)")
+plt.ylabel("X(mm)")
 plt.legend(prop=font_zh)
 plt.title("摩擦振子实验结果及正弦拟合", fontproperties=font_zh, fontsize=16)
 plt.savefig(__file__+'.svg')

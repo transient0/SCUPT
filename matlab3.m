@@ -13,3 +13,8 @@ scatter(x0, y0, 16, 'o', 'filled', 'MarkerFaceColor', 'r')
 plot(x, y, '-', ...% 实线型
 'Color', 'b', ...% 颜色
 'LineWidth', 1)% 线宽
+
+xlabel('T(S)')
+ylabel('X(mm)')
+legend('实验结果', '拟合曲线')
+title('摩擦振子实验结果及正弦拟合')
