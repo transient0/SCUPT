@@ -89,15 +89,11 @@ $$y=f(x)=\frac{\sin{x}}{\sqrt{2x^2+1}}$$
 
 4. 可选参数及其值：这一部分也需要用单引号引起，包括以下常用参数，标记点即输入的数据点，线条即为数据点之间的连线
    
-   Color：线条颜色，其值可以用单个字母表示，y黄，r红，b蓝，g绿，m紫，c青，w白，k黑，也可以用颜色单词表示，例如blue蓝色，也可以使用浮点型RGB数组表示，例如`[1, 0.5, 0.6]`
-   
-   `MarkerFaceColor`：标记点的填充颜色
-
-   `MarkerEdgeColor`：标记点的描边颜色
-
-   `LineWidth`：线条宽度，同时也是标记点描边的宽度
-
-   `MarkerSize`：标记点大小
+       Color：线条颜色，其值可以用单个字母表示，y黄，r红，b蓝，g绿，m紫，c青，w白，k黑，也可以用颜色单词表示，例如blue蓝色，也可以使用浮点型RGB数组表示，例如`[1, 0.5, 0.6]`
+       MarkerFaceColor：标记点的填充颜色
+       MarkerEdgeColor：标记点的描边颜色
+       LineWidth：线条宽度，同时也是标记点描边的宽度
+       MarkerSize：标记点大小
 
 例如红色实现无标记点线宽为1函数图
 
@@ -126,11 +122,9 @@ $$y=f(x)=\frac{\sin{x}}{\sqrt{2x^2+1}}$$
 3. `'filled'`：填入该选项则表示标记点为填充的，不填写则默认不填充
 4. 可选参数：除了前面的`'filled'`以外，还有一些与`plot`函数中类似的选项。
    
-   `MarkerFaceColor`：标记点的填充颜色
-
-   `MarkerEdgeColor`：标记点的描边颜色
-
-   `LineWidth`：描边宽度
+       MarkerFaceColor：标记点的填充颜色
+       MarkerEdgeColor：标记点的描边颜色
+       LineWidth：描边宽度
 
 例如填充了的红色上三角形点
 
@@ -140,4 +134,14 @@ $$y=f(x)=\frac{\sin{x}}{\sqrt{2x^2+1}}$$
 
 为了使我们的展示的实验图像更加规范，一般我们会对实验结果附上误差，并在绘制的图像中以误差棒的方式表现。接下来会介绍使用`errorbar`函数绘制带误差棒的散点图的方法，其格式为
 
-`errorbar(x, y, yEr, yEr, xEr, xEr, 点型, 可选参数1, 对应值1, 可选参数2, 对应值2...)`
+`errorbar(x, y, -yEr, +yEr, -xEr, +xEr, 点型, 可选参数1, 对应值1, 可选参数2, 对应值2...)`
+
+1. `-yEr`,`+yEr`,`-xEr`,`+xEr`：分别为四个方向的误差
+2. 点型：此处的点型与`plot`函数中的点型一致
+3. 可选参数：除了前面的`'filled'`以外，还有一些与`plot`函数中类似的选项。
+   
+       Color：误差棒颜色
+       MarkerFaceColor：标记点的填充颜色
+       MarkerEdgeColor：标记点的描边颜色
+       LineWidth：误差棒线宽，描边宽度
+       CapSize：误差棒帽子长度
