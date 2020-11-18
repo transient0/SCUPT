@@ -31,8 +31,8 @@ plt.errorbar(x, y, yEr, xEr, '.',
 # 误差图（X，Y，Y±，X±，各种选项=对应值）
 
 plt.axis([0, 3, 0, 0.6])
-plt.xlabel("$X$ (mm)")
-plt.ylabel("$Y$ (mm)")
+plt.xlabel("$X$(mm)")
+plt.ylabel("$Y$(mm)")
 plt.legend()
 plt.title("$F=10$N条件下$Y$与$X$关系")
 plt.show()
