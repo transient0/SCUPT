@@ -15,6 +15,7 @@ def func(x, a1, a2, a3, a4):
 data = np.array(pd.read_csv("D:\WORK\GitHub\SCUPT\data.csv"))  # 从csv文件获取数据
 x0 = np.array(data[:, 0])
 y0 = np.array(data[:, 1])
+r = abs(y0 / 3) + 4
 x = np.linspace(0, 3, 300)
 
 popt, pcov = curve_fit(func, x0, y0)
@@ -27,7 +28,7 @@ y = func(x, a1, a2, a3, a4)
 # 进行拟合，获得四个系数，并构建函数
 
 plt.figure(figsize=(8, 4))
-plt.scatter(x0, y0, 16, marker='o',
+plt.scatter(x0, y0, r, marker='o',
             color='r',
             label="实验结果")  # 绘制散点图
 plt.plot(x, y, 'b',
