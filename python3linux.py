@@ -13,7 +13,7 @@ def func(x, a1, a2, a3, a4):
     return a1*np.sin(a2*(x+a3))+a4  # 自定义要拟合的函数
 
 
-data = np.array(pd.read_csv("/home/zgb/ojy/SCUPT/data.csv"))  # 从csv文件获取数据
+data = np.array(pd.read_csv("data.csv"))  # 从csv文件获取数据
 x0 = np.array(data[:, 0])
 y0 = np.array(data[:, 1])
 r = abs(y0 / 3) + 4
