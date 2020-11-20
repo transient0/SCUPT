@@ -6,9 +6,9 @@ y0 = data(:, 2);
 r = abs(y0 ./ 3) +4;
 x = 0:0.01:3;
 
-func = @(a, x)a(1) * sin(a(2) * (x + a(3))) + a(4);
-p = lsqcurvefit(func, [-30, 5, 0, 0], x0, y0)
-y = func(p, x);
+func = @(a, x)a(1) * sin(a(2) * (x + a(3))) + a(4); %自定义要拟合的函数
+p = lsqcurvefit(func, [-30, 5, 0, 0], x0, y0)%进行拟合，获得四个系数
+y = func(p, x); %构建函数
 
 scatter(x0, y0, r, 'o', 'filled', 'MarkerFaceColor', 'r')%绘制散点图
 plot(x, y, '-', ...% 实线型
